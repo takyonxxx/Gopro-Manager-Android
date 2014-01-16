@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+     <PreferenceCategory
+        android:title="GOPRO WIFI SETTINGS"
+        android:key="first_category">  
+        <EditTextPreference
+            android:key="SSID"
+            android:title="SSID"
+            android:summary="ENTER SSID"
+            android:dialogTitle="SSID"
+            android:dialogMessage="SSID" 
+            android:defaultValue="" />
+         <EditTextPreference
+            android:key="PW"
+            android:title="PASSWORD"
+            android:summary="ENTER PW"
+            android:dialogTitle="PW"
+            android:dialogMessage="Provide PW" 
+            android:defaultValue="" />
+    </PreferenceCategory>    
+</PreferenceScreen>

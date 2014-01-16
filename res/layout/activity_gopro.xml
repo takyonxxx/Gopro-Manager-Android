@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+     <TextView
+         android:id="@+id/log"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Disconnected"
+         android:textSize="20sp"
+         android:typeface="normal" />
+        
+   <VideoView
+       android:id="@+id/videoView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"      
+       android:layout_below="@+id/power" />
+
+   <ToggleButton
+       android:id="@+id/power"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/log"
+       android:layout_below="@+id/log"
+       android:onClick="onPowerClicked"
+       android:textOff="Turn On"
+       android:textOn="Turn Off" />
+
+   <ToggleButton
+       android:id="@+id/stream"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/videoView1"
+       android:layout_toRightOf="@+id/power"
+       android:onClick="onToggleClicked"
+       android:textOff="Start Preview"
+       android:textOn="Stop Preview" />
+
+   <ToggleButton
+       android:id="@+id/capture"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/log"
+       android:layout_toRightOf="@+id/stream"
+       android:onClick="onCaptureClicked"
+       android:textOff="Capture On"
+       android:textOn="Capture Off" />
+
+</RelativeLayout>
+
